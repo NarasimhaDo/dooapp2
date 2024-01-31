@@ -1,0 +1,16 @@
+PODS:
+  - dooapp2 (1.0.0)
+
+DEPENDENCIES:
+  - dooapp2 (from `../dooapp2`)
+
+EXTERNAL SOURCES:
+  dooapp2:
+    :path: "../dooapp2"
+
+SPEC CHECKSUMS:
+  dooapp2: 3170990bbbcc1302c2ca42da614eb25528fd437a
+
+PODFILE CHECKSUM: 09865f959d996303dbaec4c92004e437717b2202
+
+COCOAPODS: 1.12.1
