@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "dooapp2"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "test app"
   spec.description  = "new test one"
   spec.homepage     = "https://github.com/NarasimhaDo/dooapp2"
