@@ -17,7 +17,7 @@ import SocketIO
         return UUID().uuidString
     }
     
-    func socketConnected(is_add : String) -> Bool
+    @objc public class func socketConnected(is_add : String) -> Bool
     {
         if is_add == "add" {
            return true
