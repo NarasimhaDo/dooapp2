@@ -7,7 +7,7 @@ target 'Example' do
 
   # Pods for Example
 
-	pod 'dooapp2' ,:path => '../dooapp2'
+	pod 'dooapp2'
 
   target 'ExampleTests' do
     inherit! :search_paths

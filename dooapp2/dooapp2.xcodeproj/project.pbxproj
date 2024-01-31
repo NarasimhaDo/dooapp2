@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		67D017592B6A77A900F9D031 /* dooapp2.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D017582B6A77A900F9D031 /* dooapp2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67D017602B6A77BE00F9D031 /* RStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0175F2B6A77BE00F9D031 /* RStrings.swift */; };
+		FB8B1464326F0591754C1C42 /* Pods_dooapp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358B369944FF4D52531D6729 /* Pods_dooapp2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1D0DEF4A3E5CFABB701FCD /* Pods-dooapp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dooapp2.debug.xcconfig"; path = "Target Support Files/Pods-dooapp2/Pods-dooapp2.debug.xcconfig"; sourceTree = "<group>"; };
+		24B8F5831681293FD06ADEC8 /* Pods-dooapp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dooapp2.release.xcconfig"; path = "Target Support Files/Pods-dooapp2/Pods-dooapp2.release.xcconfig"; sourceTree = "<group>"; };
+		358B369944FF4D52531D6729 /* Pods_dooapp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dooapp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D017552B6A77A900F9D031 /* dooapp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dooapp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D017582B6A77A900F9D031 /* dooapp2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dooapp2.h; sourceTree = "<group>"; };
 		67D0175F2B6A77BE00F9D031 /* RStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RStrings.swift; sourceTree = "<group>"; };
@@ -22,17 +26,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8B1464326F0591754C1C42 /* Pods_dooapp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FACF58618117AAB9FA91D14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358B369944FF4D52531D6729 /* Pods_dooapp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67D0174B2B6A77A900F9D031 = {
 			isa = PBXGroup;
 			children = (
 				67D017572B6A77A900F9D031 /* dooapp2 */,
 				67D017562B6A77A900F9D031 /* Products */,
+				A4D48AC73232ED10903F76B2 /* Pods */,
+				2FACF58618117AAB9FA91D14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +68,16 @@
 			path = dooapp2;
 			sourceTree = "<group>";
 		};
+		A4D48AC73232ED10903F76B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D1D0DEF4A3E5CFABB701FCD /* Pods-dooapp2.debug.xcconfig */,
+				24B8F5831681293FD06ADEC8 /* Pods-dooapp2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67D0175C2B6A77A900F9D031 /* Build configuration list for PBXNativeTarget "dooapp2" */;
 			buildPhases = (
+				E29FABB613D6665C97EDF7EA /* [CP] Check Pods Manifest.lock */,
 				67D017502B6A77A900F9D031 /* Headers */,
 				67D017512B6A77A900F9D031 /* Sources */,
 				67D017522B6A77A900F9D031 /* Frameworks */,
@@ -127,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E29FABB613D6665C97EDF7EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dooapp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67D017512B6A77A900F9D031 /* Sources */ = {
@@ -262,6 +313,7 @@
 		};
 		67D0175D2B6A77A900F9D031 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1D0DEF4A3E5CFABB701FCD /* Pods-dooapp2.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +348,7 @@
 		};
 		67D0175E2B6A77A900F9D031 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B8F5831681293FD06ADEC8 /* Pods-dooapp2.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
