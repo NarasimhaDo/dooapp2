@@ -7,7 +7,7 @@ target 'dooapp2' do
 
   # Pods for dooapp2
 
-pod 'Socket.IO-Client-Swift', '~> 16.1'
+  pod 'Socket.IO-Client-Swift', '~> 16.0.0'
 	
 
 end
