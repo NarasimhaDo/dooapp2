@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67C2E9362B70F20C001DD5F4 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C2E9342B70F20C001DD5F4 /* SocketIO.framework */; };
+		67C2E9372B70F20C001DD5F4 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67C2E9342B70F20C001DD5F4 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67C2E93E2B70F265001DD5F4 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C2E93D2B70F265001DD5F4 /* Starscream.framework */; };
+		67C2E93F2B70F265001DD5F4 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67C2E93D2B70F265001DD5F4 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67C2E9412B70F27A001DD5F4 /* Pods_dooapp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358B369944FF4D52531D6729 /* Pods_dooapp2.framework */; };
+		67C2E9422B70F27B001DD5F4 /* Pods_dooapp2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 358B369944FF4D52531D6729 /* Pods_dooapp2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		67D017592B6A77A900F9D031 /* dooapp2.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D017582B6A77A900F9D031 /* dooapp2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67D017602B6A77BE00F9D031 /* RStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0175F2B6A77BE00F9D031 /* RStrings.swift */; };
-		FB8B1464326F0591754C1C42 /* Pods_dooapp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358B369944FF4D52531D6729 /* Pods_dooapp2.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67C2E93A2B70F20D001DD5F4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				67C2E9422B70F27B001DD5F4 /* Pods_dooapp2.framework in Embed Frameworks */,
+				67C2E93F2B70F265001DD5F4 /* Starscream.framework in Embed Frameworks */,
+				67C2E9372B70F20C001DD5F4 /* SocketIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D1D0DEF4A3E5CFABB701FCD /* Pods-dooapp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dooapp2.debug.xcconfig"; path = "Target Support Files/Pods-dooapp2/Pods-dooapp2.debug.xcconfig"; sourceTree = "<group>"; };
 		24B8F5831681293FD06ADEC8 /* Pods-dooapp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dooapp2.release.xcconfig"; path = "Target Support Files/Pods-dooapp2/Pods-dooapp2.release.xcconfig"; sourceTree = "<group>"; };
 		358B369944FF4D52531D6729 /* Pods_dooapp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dooapp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C2E9342B70F20C001DD5F4 /* SocketIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SocketIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C2E9352B70F20C001DD5F4 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C2E93D2B70F265001DD5F4 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D017552B6A77A900F9D031 /* dooapp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dooapp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D017582B6A77A900F9D031 /* dooapp2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dooapp2.h; sourceTree = "<group>"; };
 		67D0175F2B6A77BE00F9D031 /* RStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RStrings.swift; sourceTree = "<group>"; };
@@ -29,7 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8B1464326F0591754C1C42 /* Pods_dooapp2.framework in Frameworks */,
+				67C2E9412B70F27A001DD5F4 /* Pods_dooapp2.framework in Frameworks */,
+				67C2E93E2B70F265001DD5F4 /* Starscream.framework in Frameworks */,
+				67C2E9362B70F20C001DD5F4 /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +65,9 @@
 		2FACF58618117AAB9FA91D14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67C2E93D2B70F265001DD5F4 /* Starscream.framework */,
+				67C2E9342B70F20C001DD5F4 /* SocketIO.framework */,
+				67C2E9352B70F20C001DD5F4 /* Starscream.framework */,
 				67D197512B6B7314009E417C /* Starscream.framework */,
 				67D1974D2B6B730C009E417C /* SocketIO.framework */,
 				67D197492B6B6C56009E417C /* SocketIO.framework */,
@@ -106,6 +135,7 @@
 				67D017512B6A77A900F9D031 /* Sources */,
 				67D017522B6A77A900F9D031 /* Frameworks */,
 				67D017532B6A77A900F9D031 /* Resources */,
+				67C2E93A2B70F20D001DD5F4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
